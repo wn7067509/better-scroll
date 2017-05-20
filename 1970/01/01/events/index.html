@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="Example: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scroll&apos;, (pos) =&amp;gt; &amp;#123;  console.log(pos.x + &apos;~&apos; + posx.y)  ...&amp;#125;) Events 列表">
+    <meta name="description" content="在创建BScroll对象之后，我们还提供了多类事件，如scrollStart、scroll、scrollCancel等，大家可根据需要，绑定自定义事件handle。 用法示例: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scro">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Events 事件 | BetterScroll">
 <meta property="og:url" content="https://ustbhuangyi.github.io/better-scroll/1970/01/01/events/index.html">
 <meta property="og:site_name" content="BetterScroll">
-<meta property="og:description" content="Example: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scroll&apos;, (pos) =&amp;gt; &amp;#123;  console.log(pos.x + &apos;~&apos; + posx.y)  ...&amp;#125;) Events 列表">
-<meta property="og:updated_time" content="2017-05-11T06:30:51.000Z">
+<meta property="og:description" content="在创建BScroll对象之后，我们还提供了多类事件，如scrollStart、scroll、scrollCancel等，大家可根据需要，绑定自定义事件handle。 用法示例: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scro">
+<meta property="og:updated_time" content="2017-05-20T13:44:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Events 事件 | BetterScroll">
-<meta name="twitter:description" content="Example: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scroll&apos;, (pos) =&amp;gt; &amp;#123;  console.log(pos.x + &apos;~&apos; + posx.y)  ...&amp;#125;) Events 列表">
+<meta name="twitter:description" content="在创建BScroll对象之后，我们还提供了多类事件，如scrollStart、scroll、scrollCancel等，大家可根据需要，绑定自定义事件handle。 用法示例: 12345678let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;),&amp;#123;   probeType: 3&amp;#125;)scroll.on(&apos;scro">
     
     
     
@@ -210,9 +210,11 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>Example:</p>
+    <p>在创建BScroll对象之后，我们还提供了多类事件，如scrollStart、scroll、scrollCancel等，大家可根据需要，绑定自定义事件handle。</p>
+<p>用法示例:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>),&#123;</div><div class="line">   <span class="attr">probeType</span>: <span class="number">3</span></div><div class="line">&#125;)</div><div class="line"></div><div class="line">scroll.on(<span class="string">'scroll'</span>, (pos) =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(pos.x + <span class="string">'~'</span> + posx.y)</div><div class="line">  ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>Events 列表</p>
+<p>​        </p>
+<h3 id="Events-列表"><a href="#Events-列表" class="headerlink" title="Events 列表"></a>Events <strong>列表</strong></h3><hr>
 <ul>
 <li>beforeScrollStart - 滚动开始之前触发</li>
 <li>scrollStart - 滚动开始时触发</li>
@@ -221,7 +223,7 @@ classes that you can use:
 <li>scrollEnd - 滚动结束时触发</li>
 <li>flick - 触发了 fastclick 时的回调函数</li>
 <li>refresh - 当 better-scroll 刷新时触发</li>
-<li>destroy - 销毁 better-scroll 实例时触发</li>
+<li>destroy - 销毁 better-scroll 实例时触发<br>​</li>
 </ul>
 
   </section>

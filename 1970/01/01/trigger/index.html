@@ -7,7 +7,7 @@
     
 
     <title>
-      Trigger 派发事件 | BetterScroll 
+      Method 实例方法 | BetterScroll 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="派发滚动 scrollTo(x, y, time, easing) 滚动到某个位置，x,y 代表坐标，time 表示动画时间，easing 表示缓动函数  Example: 123let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;))scroll.scrollTo(0, 500)...  scrollToElement(el, ti">
+    <meta name="description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Trigger 派发事件 | BetterScroll">
+<meta property="og:title" content="Method 实例方法 | BetterScroll">
 <meta property="og:url" content="https://ustbhuangyi.github.io/better-scroll/1970/01/01/trigger/index.html">
 <meta property="og:site_name" content="BetterScroll">
-<meta property="og:description" content="派发滚动 scrollTo(x, y, time, easing) 滚动到某个位置，x,y 代表坐标，time 表示动画时间，easing 表示缓动函数  Example: 123let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;))scroll.scrollTo(0, 500)...  scrollToElement(el, ti">
-<meta property="og:updated_time" content="2017-05-11T06:30:51.000Z">
+<meta property="og:description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
+<meta property="og:updated_time" content="2017-05-20T15:07:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Trigger 派发事件 | BetterScroll">
-<meta name="twitter:description" content="派发滚动 scrollTo(x, y, time, easing) 滚动到某个位置，x,y 代表坐标，time 表示动画时间，easing 表示缓动函数  Example: 123let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;))scroll.scrollTo(0, 500)...  scrollToElement(el, ti">
+<meta name="twitter:title" content="Method 实例方法 | BetterScroll">
+<meta name="twitter:description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
     
     
     
@@ -189,7 +189,7 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">Trigger 派发事件</h1>
+    <h1 class="post-title">Method 实例方法</h1>
 
     
 
@@ -210,13 +210,99 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h2 id="派发滚动"><a href="#派发滚动" class="headerlink" title="派发滚动"></a>派发滚动</h2><ul>
-<li>scrollTo(x, y, time, easing) 滚动到某个位置，x,y 代表坐标，time 表示动画时间，easing 表示缓动函数</li>
-</ul>
-<p>Example:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line">scroll.scrollTo(<span class="number">0</span>, <span class="number">500</span>)</div><div class="line">...</div></pre></td></tr></table></figure>
+    <p>我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。</p>
+<p>​    </p>
+<h3 id="实例方法列表"><a href="#实例方法列表" class="headerlink" title="实例方法列表"></a><strong>实例方法列表</strong></h3><hr>
+<p><strong>scroll.scrollTo(x, y, time, easing)</strong></p>
 <ul>
-<li>scrollToElement(el, time, offsetX, offsetY, easing) 滚动到<br>某个元素，el（必填）表示 dom 元素，time 表示动画，offsetX 和 offsetY 表示坐标偏移量，easing 表示缓动函数</li>
+<li>参数：<ul>
+<li><code>{number} x</code> : X轴坐标</li>
+<li><code>{number} y</code> : Y轴坐标</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定元素。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line">scroll.scrollTo(<span class="number">0</span>, <span class="number">500</span>)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.scrollToElement(el, time, offsetX, offsetY, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{Object} el</code> : 某个DOM元素，必填</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{number} offsetX</code> : X轴坐标偏移量</li>
+<li><code>{number} offsetX</code> : Y轴坐标偏移量</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定位置。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line"><span class="keyword">let</span> el = <span class="built_in">document</span>.getElementById(<span class="string">'elId'</span>)</div><div class="line">scroll.scrollToElement(el)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.getCurrentPage()</strong></p>
+<ul>
+<li><p>返回值：<code>{Object}</code> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 对象结构</span></div><div class="line">&#123;</div><div class="line">	<span class="attr">x</span>: <span class="number">0</span>,	<span class="comment">// 滚动横向的位置</span></div><div class="line">	y: <span class="number">0</span>,	<span class="comment">// 滚动纵向的位置</span></div><div class="line">	pageX: <span class="number">0</span>,	<span class="comment">// 横向的页面索引</span></div><div class="line">	pageY: <span class="number">0</span>	<span class="comment">// 纵向的页面索引</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>用法：</p>
+<p>当 snap 为 true 时，获取滚动的当前页。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.goToPage(x, y, time, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{number} x</code> : 横向页面索引</li>
+<li><code>{number} y</code> : 纵向页面索引</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>当 snap 为 true，滚动到指定的页面。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.refresh()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>强制BScroll实例重新计算，当 better-scroll 中的元素发生变化的时候调用此方法。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.enable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>启用 better-scroll，默认开启。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.disable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>禁用 better-scroll。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.destroy()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>销毁 better-scroll，解绑事件。<br>​</p>
+</li>
 </ul>
 
   </section>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      Method 实例方法 | BetterScroll 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="ustbhuangyi">
+    
+    
+
+    <meta name="description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Method 实例方法 | BetterScroll">
+<meta property="og:url" content="https://ustbhuangyi.github.io/better-scroll/1970/01/01/method/index.html">
+<meta property="og:site_name" content="BetterScroll">
+<meta property="og:description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
+<meta property="og:updated_time" content="2017-05-20T15:07:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Method 实例方法 | BetterScroll">
+<meta name="twitter:description" content="我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。 ​     实例方法列表 scroll.scrollTo(x, y, time, easing)  参数： {number} x : X轴坐标 {number} y : Y轴坐标 {number} time : 动画时间 {Function} easing : 缓动函数     用法： 滚动BSc">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/better-scroll/css/uno.css">
+    <link rel="stylesheet" href="/better-scroll/css/highlight.css">
+    <link rel="stylesheet" href="/better-scroll/css/archive.css">
+    <link rel="stylesheet" href="/better-scroll/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/better-scroll/" title="link to homepage">BetterScroll</a></h1>
+        <span>inspired by iscroll, and it has a better scroll perfermance</span>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/better-scroll/start" title="" class="">起步</a></li>
+              
+                
+                <li class="navigation__item"><a href="/better-scroll/#documents" title="" class="">文档</a></li>
+              
+                
+                <li class="navigation__item"><a href="/better-scroll/example" title="" class="">示例</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/ustbhuangyi" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">Method 实例方法</h1>
+
+    
+
+    <div class="post-meta">
+    
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。</p>
+<p>​    </p>
+<h3 id="实例方法列表"><a href="#实例方法列表" class="headerlink" title="实例方法列表"></a><strong>实例方法列表</strong></h3><hr>
+<p><strong>scroll.scrollTo(x, y, time, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{number} x</code> : X轴坐标</li>
+<li><code>{number} y</code> : Y轴坐标</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定元素。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line">scroll.scrollTo(<span class="number">0</span>, <span class="number">500</span>)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.scrollToElement(el, time, offsetX, offsetY, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{Object} el</code> : 某个DOM元素，必填</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{number} offsetX</code> : X轴坐标偏移量</li>
+<li><code>{number} offsetX</code> : Y轴坐标偏移量</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定位置。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line"><span class="keyword">let</span> el = <span class="built_in">document</span>.getElementById(<span class="string">'elId'</span>)</div><div class="line">scroll.scrollToElement(el)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.getCurrentPage()</strong></p>
+<ul>
+<li><p>返回值：<code>{Object}</code> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 对象结构</span></div><div class="line">&#123;</div><div class="line">	<span class="attr">x</span>: <span class="number">0</span>,	<span class="comment">// 滚动横向的位置</span></div><div class="line">	y: <span class="number">0</span>,	<span class="comment">// 滚动纵向的位置</span></div><div class="line">	pageX: <span class="number">0</span>,	<span class="comment">// 横向的页面索引</span></div><div class="line">	pageY: <span class="number">0</span>	<span class="comment">// 纵向的页面索引</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>用法：</p>
+<p>当 snap 为 true 时，获取滚动的当前页。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.goToPage(x, y, time, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{number} x</code> : 横向页面索引</li>
+<li><code>{number} y</code> : 纵向页面索引</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>当 snap 为 true，滚动到指定的页面。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.refresh()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>强制BScroll实例重新计算，当 better-scroll 中的元素发生变化的时候调用此方法。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.enable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>启用 better-scroll，默认开启。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.disable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>禁用 better-scroll。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.destroy()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>销毁 better-scroll，解绑事件。<br>​</p>
+</li>
+</ul>
+
+  </section>
+
+  
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/better-scroll/js/jquery.min.js"></script>
+    <script src="/better-scroll/js/main.js"></script>
+    <script src="/better-scroll/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/better-scroll/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

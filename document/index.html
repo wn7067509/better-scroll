@@ -7,7 +7,7 @@
     
 
     <title>
-      Options 参数 | BetterScroll 
+      文档 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="在创建BScroll对象时，我们提供了多项参数的灵活配置。 用法示例： 1234let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;), &amp;#123;  startX: 0,  startY: 0&amp;#125;) 这些参数项，大部分是用于普通滚动列表的，也有小部分是仅用于轮播图slider或picker组件。 ​     滚动列表参数">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Options 参数 | BetterScroll">
-<meta property="og:url" content="https://ustbhuangyi.github.io/better-scroll/1970/01/01/options/index.html">
+    <meta name="description" content="​       Install 安装 通过npm引入安装better-scroll 1npm install better-scroll --save-dev 引入better-scroll 1import BScroll from &apos;better-scroll&apos; 如果不支持import, 请使用 1var BScroll = require(&apos;better-scroll&apos;) ​     Opti">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文档">
+<meta property="og:url" content="https://ustbhuangyi.github.io/better-scroll/document/index.html">
 <meta property="og:site_name" content="BetterScroll">
-<meta property="og:description" content="在创建BScroll对象时，我们提供了多项参数的灵活配置。 用法示例： 1234let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;), &amp;#123;  startX: 0,  startY: 0&amp;#125;) 这些参数项，大部分是用于普通滚动列表的，也有小部分是仅用于轮播图slider或picker组件。 ​     滚动列表参数">
-<meta property="og:updated_time" content="2017-05-20T14:18:47.000Z">
+<meta property="og:description" content="​       Install 安装 通过npm引入安装better-scroll 1npm install better-scroll --save-dev 引入better-scroll 1import BScroll from &apos;better-scroll&apos; 如果不支持import, 请使用 1var BScroll = require(&apos;better-scroll&apos;) ​     Opti">
+<meta property="og:updated_time" content="2017-06-13T06:31:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Options 参数 | BetterScroll">
-<meta name="twitter:description" content="在创建BScroll对象时，我们提供了多项参数的灵活配置。 用法示例： 1234let scroll = new BScroll(document.getElementById(&apos;wrapper&apos;), &amp;#123;  startX: 0,  startY: 0&amp;#125;) 这些参数项，大部分是用于普通滚动列表的，也有小部分是仅用于轮播图slider或picker组件。 ​     滚动列表参数">
+<meta name="twitter:title" content="文档">
+<meta name="twitter:description" content="​       Install 安装 通过npm引入安装better-scroll 1npm install better-scroll --save-dev 引入better-scroll 1import BScroll from &apos;better-scroll&apos; 如果不支持import, 请使用 1var BScroll = require(&apos;better-scroll&apos;) ​     Opti">
     
     
     
@@ -189,33 +189,29 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">Options 参数</h1>
+    <h1 class="post-title">文档</h1>
 
-    
-
-    <div class="post-meta">
-    
-
-      <span class="post-meta__tags tags">
-
-          
-
-          
-
-      </span>
-    </div>
-    
     
 
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>在创建BScroll对象时，我们提供了多项参数的灵活配置。</p>
+    <p>​      </p>
+<h2 id="Install-安装"><a href="#Install-安装" class="headerlink" title="Install 安装"></a>Install 安装</h2><hr>
+<h3 id="通过npm引入"><a href="#通过npm引入" class="headerlink" title="通过npm引入"></a>通过npm引入</h3><p>安装better-scroll</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install better-scroll --save-dev</div></pre></td></tr></table></figure>
+<p>引入better-scroll</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> BScroll <span class="keyword">from</span> <span class="string">'better-scroll'</span></div></pre></td></tr></table></figure>
+<p>如果不支持import, 请使用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> BScroll = <span class="built_in">require</span>(<span class="string">'better-scroll'</span>)</div></pre></td></tr></table></figure>
+<p>​    </p>
+<h2 id="Options-参数"><a href="#Options-参数" class="headerlink" title="Options 参数"></a>Options 参数</h2><hr>
+<p>在创建BScroll对象时，我们提供了多项参数的灵活配置。</p>
 <p>用法示例：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>), &#123;</div><div class="line">  <span class="attr">startX</span>: <span class="number">0</span>,</div><div class="line">  <span class="attr">startY</span>: <span class="number">0</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>这些参数项，大部分是用于普通滚动列表的，也有小部分是仅用于轮播图slider或picker组件。</p>
 <p>​    </p>
-<h3 id="滚动列表参数"><a href="#滚动列表参数" class="headerlink" title="滚动列表参数"></a><strong>滚动列表参数</strong></h3><hr>
+<h4 id="滚动列表参数："><a href="#滚动列表参数：" class="headerlink" title="滚动列表参数："></a><strong>滚动列表参数：</strong></h4><hr>
 <p><strong>scrollY</strong></p>
 <ul>
 <li>类型：<code>boolean</code></li>
@@ -338,11 +334,15 @@ classes that you can use:
 </ul>
 <p><strong>probeType</strong></p>
 <ul>
-<li>类型：<code>number</code></li>
-<li>默认值：无</li>
-<li>配置： <code>1</code> 滚动的时候会派发scroll事件，会截流；<code>2</code>滚动的时候实时派发scroll事件，不会截流； <code>3</code>除了实时派发scroll事件，在swipe的情况下仍然能实时派发scroll事件<br>​</li>
+<li><p>类型：<code>number</code></p>
+</li>
+<li><p>默认值：无</p>
+</li>
+<li><p>配置： <code>1</code> 滚动的时候会派发scroll事件，会截流；<code>2</code>滚动的时候实时派发scroll事件，不会截流； <code>3</code>除了实时派发scroll事件，在swipe的情况下仍然能实时派发scroll事件</p>
+<p>​</p>
+</li>
 </ul>
-<h3 id="slider组件参数"><a href="#slider组件参数" class="headerlink" title="slider组件参数"></a><strong>slider组件参数</strong></h3><hr>
+<h4 id="slider组件参数："><a href="#slider组件参数：" class="headerlink" title="slider组件参数："></a><strong>slider组件参数：</strong></h4><hr>
 <p><strong>snap</strong></p>
 <ul>
 <li>类型：<code>boolean</code></li>
@@ -367,7 +367,7 @@ classes that you can use:
 <li>默认值：<code>400</code></li>
 <li>配置：轮播图切换的动画时间<br>​</li>
 </ul>
-<h3 id="picker组件参数"><a href="#picker组件参数" class="headerlink" title="picker组件参数"></a><strong>picker组件参数</strong></h3><hr>
+<h4 id="picker组件参数："><a href="#picker组件参数：" class="headerlink" title="picker组件参数："></a><strong>picker组件参数：</strong></h4><hr>
 <p><strong>wheel</strong></p>
 <ul>
 <li>类型：<code>boolean</code></li>
@@ -391,6 +391,119 @@ classes that you can use:
 <li>类型：<code>number</code></li>
 <li>默认值：<code>400</code></li>
 <li>配置：仅当wheel 为 true 有用，调整停留位置的时间</li>
+</ul>
+<p>  ​</p>
+<h2 id="Method-实例方法"><a href="#Method-实例方法" class="headerlink" title="Method 实例方法"></a>Method 实例方法</h2><hr>
+<p>我们还提供了一些实例方法，以对BScroll实例进行特定操作，比如，让列表混动到某个位置或某个元素。</p>
+<p>​    </p>
+<h4 id="实例方法列表："><a href="#实例方法列表：" class="headerlink" title="实例方法列表："></a><strong>实例方法列表：</strong></h4><hr>
+<p><strong>scroll.scrollTo(x, y, time, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{number} x</code> : X轴坐标</li>
+<li><code>{number} y</code> : Y轴坐标</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定元素。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line">scroll.scrollTo(<span class="number">0</span>, <span class="number">500</span>)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.scrollToElement(el, time, offsetX, offsetY, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{Object} el</code> : 某个DOM元素，必填</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{number} offsetX</code> : X轴坐标偏移量</li>
+<li><code>{number} offsetX</code> : Y轴坐标偏移量</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>滚动BScroll实例到指定位置。</p>
+</li>
+</ul>
+<ul>
+<li><p>示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>))</div><div class="line"><span class="keyword">let</span> el = <span class="built_in">document</span>.getElementById(<span class="string">'elId'</span>)</div><div class="line">scroll.scrollToElement(el)</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>scroll.getCurrentPage()</strong></p>
+<ul>
+<li><p>返回值：<code>{Object}</code> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 对象结构</span></div><div class="line">&#123;</div><div class="line">	<span class="attr">x</span>: <span class="number">0</span>,	<span class="comment">// 滚动横向的位置</span></div><div class="line">	y: <span class="number">0</span>,	<span class="comment">// 滚动纵向的位置</span></div><div class="line">	pageX: <span class="number">0</span>,	<span class="comment">// 横向的页面索引</span></div><div class="line">	pageY: <span class="number">0</span>	<span class="comment">// 纵向的页面索引</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>用法：</p>
+<p>当 snap 为 true 时，获取滚动的当前页。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.goToPage(x, y, time, easing)</strong></p>
+<ul>
+<li>参数：<ul>
+<li><code>{number} x</code> : 横向页面索引</li>
+<li><code>{number} y</code> : 纵向页面索引</li>
+<li><code>{number} time</code> : 动画时间</li>
+<li><code>{Function} easing</code> : 缓动函数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>用法：</p>
+<p>当 snap 为 true，滚动到指定的页面。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.refresh()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>强制BScroll实例重新计算，当 better-scroll 中的元素发生变化的时候调用此方法。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.enable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>启用 better-scroll，默认开启。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.disable()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>禁用 better-scroll。<br>​</p>
+</li>
+</ul>
+<p><strong>scroll.destroy()</strong></p>
+<ul>
+<li><p>用法：</p>
+<p>销毁 better-scroll，解绑事件。</p>
+</li>
+</ul>
+<p>  ​</p>
+<h2 id="Events-事件"><a href="#Events-事件" class="headerlink" title="Events 事件"></a>Events 事件</h2><hr>
+<p>在创建BScroll对象之后，我们还提供了多类事件，如scrollStart、scroll、scrollCancel等，大家可根据需要，绑定自定义事件handle。</p>
+<p>用法示例:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> scroll = <span class="keyword">new</span> BScroll(<span class="built_in">document</span>.getElementById(<span class="string">'wrapper'</span>),&#123;</div><div class="line">   <span class="attr">probeType</span>: <span class="number">3</span></div><div class="line">&#125;)</div><div class="line"></div><div class="line">scroll.on(<span class="string">'scroll'</span>, (pos) =&gt; &#123;</div><div class="line">  <span class="built_in">console</span>.log(pos.x + <span class="string">'~'</span> + posx.y)</div><div class="line">  ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>​        </p>
+<h4 id="Events-列表："><a href="#Events-列表：" class="headerlink" title="Events 列表："></a>Events <strong>列表：</strong></h4><hr>
+<ul>
+<li>beforeScrollStart - 滚动开始之前触发</li>
+<li>scrollStart - 滚动开始时触发</li>
+<li>scroll - 滚动时触发</li>
+<li>scrollCancel - 取消滚动时触发</li>
+<li>scrollEnd - 滚动结束时触发</li>
+<li>flick - 触发了 fastclick 时的回调函数</li>
+<li>refresh - 当 better-scroll 刷新时触发</li>
+<li>destroy - 销毁 better-scroll 实例时触发<br>​<br>​</li>
 </ul>
 
   </section>
@@ -427,18 +540,6 @@ classes that you can use:
 
 
     
-
-    <script src="/better-scroll/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
     
     
     <!--kill ie6 -->
